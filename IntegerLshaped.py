@@ -814,7 +814,7 @@ if __name__ == "__main__":
 
         'n_nodes': main_problem.NodeCount,
 
-        'x': x,
+        #'x': x,
     }
 
     #problem_str = f"s{args.n_scenarios}"
@@ -822,6 +822,6 @@ if __name__ == "__main__":
 
     #with open(fp_results, 'wb') as p:
         #pkl.dump(results, p)
-    x = list(map(lambda y: y.x, x))
-    abc=sum(x)
-    print(abc)
+    #x = list(map(lambda y: y.x, x))
+    #abc=sum(x)
+    #print(abc)
