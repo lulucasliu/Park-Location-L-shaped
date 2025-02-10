@@ -120,25 +120,6 @@ class Two_Sp:
 
         self.h_s=np.array(h_s)
 
-        #count1 = 0
-        #count2 = 0
-        #count3 = 0
-        #count4 = 0
-        #for m in self.candidate:
-        #    for n in self.population_scen[0].keys():
-        #        if self.candidate_dis[m, n] < 0.5:
-        #            self.beta_d[m, n] = 100
-        #            #count1 += 1
-        #        elif 0.5 <= self.candidate_dis[m, n] < 2.5:
-        #            self.beta_d[m, n] = 50
-        #            #count2 += 1
-        #        elif 2.5 <= self.candidate_dis[m, n] < 5:
-        #            self.beta_d[m, n] = 30
-        #            #count3 += 1
-        #        else:
-        #            self.beta_d[m, n] = 10
-                    #count4 += 1
-
 
     def get_main_lp(self):
 
@@ -230,17 +211,6 @@ class Two_Sp:
         #n_scenarios = len(scenarios)
         scenario_prob = 1 / self.n_scenario
 
-        # get first-stage objective
-        #first_stage_obj_val = np.dot(x, self.fixed_costs)
-
-        # get second-stage objective
-        #pool = Pool(n_procs)
-        #results = [pool.apply_async(self.get_second_stage_obj_worker,
-        #                            args=(x, scenario, scenario_prob, gap, time_limit, threads, verbose)) for scenario
-        #           in scenarios]
-        #results = [r.get() for r in results]
-        #pool.close()
-        #pool.join()
         results=[]
         v_min_list=[]
         for scenario in self.scenario_index:
