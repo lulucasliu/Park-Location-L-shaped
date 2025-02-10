@@ -7,8 +7,6 @@ import random
 import numpy as np
 import time
 import pdb
-from abc import ABC, abstractmethod
-from multiprocessing import Pool, Manager
 
 class read_park_data:
 
